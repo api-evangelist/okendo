@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.okendo.io/on-site/on-site-widgets
+docs: https://docs.okendo.io/on-site/on-site-widgets
+summary: >-
+  Okendo ships a family of embeddable on-site widgets and a Storefront Javascript
+  API for displaying reviews, ratings, Q&A and media on ecommerce storefronts,
+  plus first-party Vue and Shopify Hydrogen (React) component packages.
+component_families:
+- family: On-Site Widgets
+  loader: Storefront Javascript API (Widget Plus / window API)
+  docs: https://docs.okendo.io/on-site/on-site-widgets
+  components:
+  - {name: Reviews Widget, docs: https://docs.okendo.io/on-site/on-site-widgets/reviews-widget}
+  - {name: Star Rating, docs: https://docs.okendo.io/on-site/on-site-widgets/star-rating}
+  - {name: Questions Widget, docs: https://docs.okendo.io/on-site/on-site-widgets/questions-widget}
+  - {name: Reviews Carousel Widget, docs: https://docs.okendo.io/on-site/on-site-widgets/reviews-carousel-widget}
+  - {name: Media Grid Widget, docs: https://docs.okendo.io/on-site/on-site-widgets/media-grid-widget}
+  - {name: Media Carousel Widget, docs: https://docs.okendo.io/on-site/on-site-widgets/media-carousel-widget}
+  - {name: Reviews Badge Widget, docs: https://docs.okendo.io/on-site/on-site-widgets/reviews-badge-widget}
+  - {name: Reviews Modal Trigger, docs: https://docs.okendo.io/on-site/on-site-widgets/reviews-modal-trigger}
+- family: Storefront Javascript API
+  docs: https://docs.okendo.io/on-site/storefront-javascript-api
+  components:
+  - {name: Widget Plus Window API, docs: https://docs.okendo.io/on-site/storefront-javascript-api/widget-plus-window-api}
+  - {name: Surveys Connect Window API, docs: https://docs.okendo.io/on-site/storefront-javascript-api/surveys-connect-window-api}
+  - {name: Quizzes Connect Window API, docs: https://docs.okendo.io/on-site/storefront-javascript-api/quizzes-connect-window-api}
+  - {name: Referrals Window API, docs: https://docs.okendo.io/on-site/storefront-javascript-api/referrals-window-api}
+- family: Framework component packages
+  notes: Distributed on npm under the @okendo scope; see packages/okendo-packages.yml
+  components:
+  - {name: '@okendo/reviews-widget-plus-vue', framework: Vue}
+  - {name: '@okendo/okendo-widgets-vue', framework: Vue}
+  - {name: '@okendo/shopify-hydrogen', framework: React (Shopify Hydrogen)}

@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.okendo.io/merchant-rest-api/quick-start
+docs: https://docs.okendo.io/merchant-rest-api/quick-start
+summary:
+  types: [http]
+  http_schemes: [basic]
+  api_key_in: []
+  oauth2_flows: []
+  notes: >-
+    Okendo exposes two REST surfaces with different auth models. The Merchant
+    (Enterprise) REST API uses HTTP Basic authentication; credentials are the
+    Okendo user id and API key combined as "<okendo_user_id>:<api_key>" and
+    base64-encoded, obtained from the integration settings section of the Okendo
+    app. All requests must also send an okendo-api-version date header. The
+    Storefront REST API is a public, unauthenticated read surface scoped by
+    okendo_user_id in the path.
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  applies_to: Merchant (Enterprise) REST API
+  credential: base64("<okendo_user_id>:<api_key>")
+  header: 'Authorization: Basic <base64-credentials>'
+  key_source: Okendo app > integration settings
+  sources: [https://docs.okendo.io/merchant-rest-api/quick-start]
+- name: publicStorefront
+  type: none
+  scheme: none
+  applies_to: Storefront REST API
+  notes: Public read-only endpoints scoped by okendo_user_id path segment; no credential required.
+  sources: [https://docs.okendo.io/on-site/storefront-rest-api/quick-start]
+version_header:
+  name: okendo-api-version
+  required: true
+  example: '2025-02-01'

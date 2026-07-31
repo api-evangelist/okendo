@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.okendo.io/merchant-rest-api/quick-start
+versioning:
+  scheme: date-header
+  header: okendo-api-version
+  current: '2025-02-01'
+  docs: https://docs.okendo.io/merchant-rest-api/quick-start
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No formal deprecation/sunset policy is published in the developer docs.
+sla:
+  url: null
+status_page: https://status.okendo.io/
+support:
+  help_center: https://support.okendo.io
+  email: solutions@okendo.io
+deprecated_operations: []

@@ -1,0 +1,53 @@
+generated: '2026-07-20'
+method: derived
+source: https://docs.okendo.io/merchant-rest-api/endpoints
+notes: >-
+  Entity-relationship graph derived from the documented Merchant/Storefront REST
+  API resources. Okendo is Shopify-centric; products/orders reference Shopify ids
+  (e.g. shopify-{product_id}).
+entities:
+- name: Review
+  key: reviewId
+  belongs_to: [{entity: Product, via: productId}, {entity: Customer, via: customerId}]
+  notes: Moderation status approved|pending|rejected; supports merchant reply.
+- name: Group
+  key: groupId
+  notes: Shopify-backed review group / collection.
+- name: Customer
+  key: customerId
+  has_many: [{entity: CustomerProfile, via: customerId}, {entity: CustomerActivity, via: customerId}]
+- name: CustomerProfile
+  belongs_to: [{entity: Customer, via: customerId}]
+- name: CustomerActivity
+  belongs_to: [{entity: Customer, via: customerId}]
+- name: LoyaltyCustomer
+  key: customerId
+  has_many:
+  - {entity: LoyaltyTransaction, via: customerId}
+  - {entity: LoyaltyCoupon, via: customerId}
+  notes: VIP tiers; earning/redemption/adjustment transactions.
+- name: EarningRule
+- name: RedemptionRule
+- name: LoyaltyCoupon
+  belongs_to: [{entity: LoyaltyCustomer, via: customerId}]
+- name: LoyaltyTransaction
+  subtypes: [adjustment, earning, redemption]
+  belongs_to: [{entity: LoyaltyCustomer, via: customerId}]
+- name: Survey
+  key: surveyId
+  has_many: [{entity: SurveyResponse, via: surveyId}]
+- name: SurveyResponse
+  belongs_to: [{entity: Survey, via: surveyId}]
+- name: Quiz
+  key: quizId
+  has_many: [{entity: QuizResponse, via: quizId}]
+- name: QuizResponse
+  belongs_to: [{entity: Quiz, via: quizId}]
+- name: Referral
+  notes: Referral lifecycle events surfaced via webhooks.
+- name: WebhookSubscription
+  key: webhookSubscriptionId
+  notes: Carries topic + webhookSecret for event verification.
+- name: Product
+  key: productId
+  external_id: shopify-{product_id}

@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: derived
+source: https://docs.okendo.io/merchant-rest-api
+notes: >-
+  Derived from the documented Merchant/Storefront REST conventions and the
+  published trust/security posture. Compliance program (SOC 2, GDPR) is captured
+  in security/okendo-trust-center.yml.
+standards:
+- id: oauth2
+  conforms: false
+  evidence: Merchant API uses HTTP Basic auth; no OAuth2 documented.
+- id: http-basic-auth
+  conforms: true
+  evidence: Merchant REST API authenticates with HTTP Basic (RFC 7617).
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json error envelope documented.
+- id: cursor-pagination
+  conforms: true
+  evidence: List endpoints use limit + lastEvaluated cursor and return nextUrl.
+- id: webhooks
+  conforms: true
+  evidence: Documented webhook topics with subscription management and secret-based verification.
+- id: soc2
+  conforms: true
+  evidence: SOC 2 stated on trust.okendo.io trust center.
+- id: gdpr
+  conforms: true
+  evidence: GDPR compliance documented (okendo.io/gdpr-faq, trust center).

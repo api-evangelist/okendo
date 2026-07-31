@@ -1,0 +1,46 @@
+# Okendo
+
+## Technical Reference
+
+- [Introduction](https://docs.okendo.io/readme.md)
+- [Merchant REST API](https://docs.okendo.io/merchant-rest-api.md)
+- [Quick Start](https://docs.okendo.io/merchant-rest-api/quick-start.md): Get started in minutes with Okendo's Merchant REST API
+- [Endpoints](https://docs.okendo.io/merchant-rest-api/endpoints.md): Full specifications of each API endpoint available in Okendo's Merchant REST API
+- [Reviews](https://docs.okendo.io/merchant-rest-api/endpoints/reviews.md): Endpoints related to Okendo Reviews and review groups
+- [Loyalty](https://docs.okendo.io/merchant-rest-api/endpoints/loyalty.md): Merchant REST API endpoints related to Okendo Loyalty
+- [Surveys](https://docs.okendo.io/merchant-rest-api/endpoints/surveys.md): Merchant REST API endpoints related to Okendo Surveys
+- [Quizzes](https://docs.okendo.io/merchant-rest-api/endpoints/quizzes.md): Merchant REST API endpoints related to Okendo Quizzes
+- [Customers](https://docs.okendo.io/merchant-rest-api/endpoints/customers.md): Endpoints related to customer profiles in Okendo
+- [Webhooks](https://docs.okendo.io/merchant-rest-api/endpoints/webhooks.md): Endpoints to manage Okendo webhooks
+- [Settings](https://docs.okendo.io/merchant-rest-api/endpoints/settings.md): Endpoints related to managing Okendo settings
+- [On Site Widgets](https://docs.okendo.io/on-site/on-site-widgets.md)
+- [Reviews Widget](https://docs.okendo.io/on-site/on-site-widgets/reviews-widget.md)
+- [Star Rating](https://docs.okendo.io/on-site/on-site-widgets/star-rating.md)
+- [Questions Widget](https://docs.okendo.io/on-site/on-site-widgets/questions-widget.md)
+- [Reviews Carousel Widget](https://docs.okendo.io/on-site/on-site-widgets/reviews-carousel-widget.md)
+- [Media Grid Widget](https://docs.okendo.io/on-site/on-site-widgets/media-grid-widget.md)
+- [Media Carousel Widget](https://docs.okendo.io/on-site/on-site-widgets/media-carousel-widget.md)
+- [Reviews Badge Widget](https://docs.okendo.io/on-site/on-site-widgets/reviews-badge-widget.md)
+- [Reviews Modal Trigger](https://docs.okendo.io/on-site/on-site-widgets/reviews-modal-trigger.md)
+- [Storefront Javascript API](https://docs.okendo.io/on-site/storefront-javascript-api.md)
+- [Widget Plus Window API](https://docs.okendo.io/on-site/storefront-javascript-api/widget-plus-window-api.md)
+- [Surveys - Connect Window API](https://docs.okendo.io/on-site/storefront-javascript-api/surveys-connect-window-api.md)
+- [Quizzes - Connect Window API](https://docs.okendo.io/on-site/storefront-javascript-api/quizzes-connect-window-api.md)
+- [Referrals Window API](https://docs.okendo.io/on-site/storefront-javascript-api/referrals-window-api.md)
+- [Inspiration](https://docs.okendo.io/on-site/storefront-javascript-api/inspiration.md): Here are some common ways that the Storefront Javascript API can be used to build custom on-site features.
+- [Storefront REST API](https://docs.okendo.io/on-site/storefront-rest-api.md): Use our public REST API from your storefront to build custom displays with your data.
+- [Quick Start](https://docs.okendo.io/on-site/storefront-rest-api/quick-start.md): Make your first request to the Storefront REST API in minutes
+- [Endpoints](https://docs.okendo.io/on-site/storefront-rest-api/endpoints.md): Full specifications of each API endpoint available in Okendo's Storefront REST API
+- [Reviews](https://docs.okendo.io/on-site/storefront-rest-api/endpoints/reviews.md): Storefront REST API endpoints related to Okendo Reviews
+- [Loyalty](https://docs.okendo.io/on-site/storefront-rest-api/endpoints/loyalty.md): Storefront REST API endpoints related to Okendo Loyalty. Both unauthenticated and after customer authentication.
+- [Referrals](https://docs.okendo.io/on-site/storefront-rest-api/endpoints/referrals.md): Storefront REST API endpoints related to Okendo Referrals
+- [Advanced Widget Installs](https://docs.okendo.io/on-site/advanced-widget-installs.md)
+- [Installing Reviews on Headless Instances](https://docs.okendo.io/on-site/advanced-widget-installs/installing-widget-plus-on-headless-instances.md)
+- [Installing Loyalty on Headless Instances](https://docs.okendo.io/on-site/advanced-widget-installs/installing-loyalty-on-headless-instances.md)
+- [Installing Surveys on Headless Instances](https://docs.okendo.io/on-site/advanced-widget-installs/installing-connect-surveys-on-headless-instances.md)
+- [Installing Quizzes on Headless Instances](https://docs.okendo.io/on-site/advanced-widget-installs/installing-quizzes-on-headless-instances.md)
+- [Installing Quizzes with Custom Carts](https://docs.okendo.io/on-site/advanced-widget-installs/installing-quizzes-with-custom-carts.md)
+- [Stores Running an Existing Vue App](https://docs.okendo.io/on-site/advanced-widget-installs/stores-running-an-existing-vue-app.md): Merchants using the standard Shopify ecosystem but running Vue on their store
+- [Okendo Shopify Hydrogen Support](https://docs.okendo.io/okendo-shopify-hydrogen-support.md)
+- [Getting Started](https://docs.okendo.io/webhooks/getting-started.md)
+- [Topics](https://docs.okendo.io/webhooks/topics.md)

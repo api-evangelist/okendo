@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of okendo.io / api.okendo.io / docs.okendo.io
+notes: >-
+  No /.well-known discovery documents are published. The API host api.okendo.io
+  returns 403 to unauthenticated probes; www/docs hosts return 404.
+hosts:
+- host: https://api.okendo.io
+  documents:
+  - {path: /.well-known/security.txt, status: 403}
+  - {path: /.well-known/openid-configuration, status: 403}
+  - {path: /.well-known/oauth-authorization-server, status: 403}
+  - {path: /.well-known/api-catalog, status: 403}
+  - {path: /.well-known/ai-plugin.json, status: 403}
+- host: https://www.okendo.io
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+- host: https://docs.okendo.io
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}

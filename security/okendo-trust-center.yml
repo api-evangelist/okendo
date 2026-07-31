@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+source: https://trust.okendo.io/
+url: https://trust.okendo.io/
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://trust.okendo.io/
+  keywords:
+  - soc 2
+  - trust center
+  - gdpr

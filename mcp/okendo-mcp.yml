@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: https://docs.okendo.io/merchant-rest-api/endpoints
+notes: >-
+  Okendo does not publish an official hosted/remote MCP server. This is a
+  candidate tool list derived from the documented Merchant REST API operations
+  (base https://api.okendo.io/enterprise, HTTP Basic auth + okendo-api-version
+  header).
+server:
+  name: okendo
+  transport: http
+  base_url: https://api.okendo.io/enterprise
+tools:
+- {name: list_reviews, description: List reviews for the store, source_operation: 'GET /reviews (listReviews)'}
+- {name: get_review, description: Retrieve an individual review, source_operation: 'GET /reviews/{reviewId} (getReview)'}
+- {name: update_review, description: Modify a review moderation status, source_operation: 'PUT /reviews/{reviewId} (updateReview)'}
+- {name: reply_to_review, description: Add a response to a customer review, source_operation: 'POST /reviews/{reviewId}/reply (replyToReview)'}
+- {name: create_group, description: Create a Shopify-backed review group, source_operation: 'POST /groups (createGroup)'}
+- {name: lookup_customer, description: Look up a customer id by email, source_operation: 'POST /customer_lookup (lookupCustomer)'}
+- {name: get_customer, description: Retrieve basic customer details, source_operation: 'GET /customers/{customerId} (getCustomer)'}
+- {name: list_customer_profiles, description: List customer profiles and properties, source_operation: 'GET /customers/{customerId}/profiles (listCustomerProfiles)'}
+- {name: list_customer_activities, description: List customer activities, source_operation: 'GET /customers/{customerId}/activities (listCustomerActivities)'}
+- {name: get_loyalty_customer, description: Retrieve loyalty customer details, source_operation: 'GET /loyalty/customers (getLoyaltyCustomer)'}
+- {name: list_earning_rules, description: List loyalty earning rules, source_operation: 'GET /loyalty/earning_rules (listEarningRules)'}
+- {name: list_redemption_rules, description: List loyalty redemption rules, source_operation: 'GET /loyalty/redemption_rules (listRedemptionRules)'}
+- {name: list_loyalty_coupons, description: List active loyalty coupons, source_operation: 'GET /loyalty/coupons (listLoyaltyCoupons)'}
+- {name: create_adjustment_transaction, description: Adjust a loyalty points balance, source_operation: 'POST /loyalty/adjustment_transactions (createAdjustmentTransaction)'}
+- {name: create_earning_transaction, description: Trigger a custom earning rule, source_operation: 'POST /loyalty/earning_transactions (createEarningTransaction)'}
+- {name: create_redemption_transaction, description: Redeem a loyalty reward, source_operation: 'POST /loyalty/redemption_transactions (createRedemptionTransaction)'}
+- {name: set_minimum_vip_tier, description: Set a loyalty customer minimum VIP tier, source_operation: 'POST /loyalty/customer_minimum_vip_tiers (setMinimumVipTier)'}
+- {name: list_survey_responses, description: List survey responses, source_operation: 'GET /surveys/{surveyId}/responses (listSurveyResponses)'}
+- {name: list_quiz_responses, description: List quiz responses, source_operation: 'GET /quizzes/{quizId}/responses (listQuizResponses)'}
+- {name: list_webhook_subscriptions, description: List webhook subscriptions, source_operation: 'GET /webhook_subscriptions (listWebhookSubscriptions)'}
+- {name: create_webhook_subscription, description: Create a webhook subscription, source_operation: 'POST /webhook_subscriptions (createWebhookSubscription)'}
+- {name: get_webhook_subscription, description: Retrieve a webhook subscription, source_operation: 'GET /webhook_subscriptions/{webhookSubscriptionId} (getWebhookSubscription)'}
+- {name: update_webhook_subscription, description: Update a webhook subscription, source_operation: 'PUT /webhook_subscriptions/{webhookSubscriptionId} (updateWebhookSubscription)'}
+- {name: delete_webhook_subscription, description: Delete a webhook subscription, source_operation: 'DELETE /webhook_subscriptions/{webhookSubscriptionId} (deleteWebhookSubscription)'}
+- {name: rotate_webhook_secret, description: Rotate a webhook subscription secret, source_operation: 'POST /webhook_subscriptions/{webhookSubscriptionId}/rotate_secret (rotateWebhookSecret)'}

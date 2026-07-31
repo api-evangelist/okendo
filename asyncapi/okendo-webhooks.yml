@@ -1,0 +1,54 @@
+generated: '2026-07-20'
+method: searched
+type: Webhooks
+source: https://docs.okendo.io/webhooks/topics
+docs:
+  getting_started: https://docs.okendo.io/webhooks/getting-started
+  topics: https://docs.okendo.io/webhooks/topics
+  management_api: https://docs.okendo.io/merchant-rest-api/endpoints/webhooks
+summary: >-
+  Okendo delivers JSON webhook events for reviews, loyalty, surveys, quizzes and
+  referrals. Subscriptions are managed via the Merchant REST API
+  (/webhook_subscriptions); each subscription returns a webhookSecret used to
+  verify event authenticity.
+payload:
+  format: json
+  fields:
+    resource: Object containing event-specific data
+    resourceType: Identifies resource category
+    sequenceNumber: Unique event identifier
+    topic: Event action (create/update/delete)
+    version: API version, e.g. '2025-02-01'
+  verification: webhookSecret (returned on subscription create / rotate_secret)
+management_operations:
+- listWebhookSubscriptions
+- createWebhookSubscription
+- getWebhookSubscription
+- updateWebhookSubscription
+- deleteWebhookSubscription
+- rotateWebhookSecret
+topics:
+- {name: review.create, description: Product review submitted}
+- {name: review.update, description: Product review edited}
+- {name: review.delete, description: Product review removed}
+- {name: loyalty_customer.create, description: Loyalty program member enrolled}
+- {name: loyalty_customer.update, description: Loyalty program member details changed}
+- {name: loyalty_customer.delete, description: Loyalty program member deleted}
+- {name: loyalty_earning_transaction.create, description: Points earned from customer action}
+- {name: loyalty_earning_transaction.update, description: Points earning transaction modified}
+- {name: loyalty_earning_transaction.delete, description: Points earning transaction removed}
+- {name: loyalty_redemption_transaction.create, description: Points converted to reward}
+- {name: loyalty_redemption_transaction.update, description: Points redemption modified}
+- {name: loyalty_redemption_transaction.delete, description: Points redemption removed}
+- {name: loyalty_adjustment_transaction.create, description: Manual loyalty points adjustment created}
+- {name: loyalty_adjustment_transaction.update, description: Manual loyalty points adjustment modified}
+- {name: loyalty_adjustment_transaction.delete, description: Manual loyalty points adjustment removed}
+- {name: survey_response.create, description: Survey completion recorded}
+- {name: survey_response.update, description: Survey response modified}
+- {name: survey_response.delete, description: Survey response removed}
+- {name: quiz_response.create, description: Quiz completion recorded}
+- {name: quiz_response.update, description: Quiz response changed}
+- {name: quiz_response.delete, description: Quiz response deleted}
+- {name: referral.create, description: Referral initiated}
+- {name: referral.update, description: Referral status changed}
+- {name: referral.delete, description: Referral removed}

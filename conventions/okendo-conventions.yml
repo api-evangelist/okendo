@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.okendo.io/merchant-rest-api
+docs: https://docs.okendo.io/merchant-rest-api/endpoints
+summary: >-
+  Cross-cutting request/response conventions for the Okendo Merchant REST API,
+  captured from the developer documentation. Idempotency is not documented as a
+  first-class contract, so no Idempotency pointer is emitted.
+authentication:
+  merchant: HTTP Basic (base64 of "<okendo_user_id>:<api_key>")
+  storefront: public (unauthenticated, scoped by okendo_user_id in path)
+  see: authentication/okendo-authentication.yml
+versioning:
+  style: date-header
+  header: okendo-api-version
+  current: '2025-02-01'
+  required: true
+  notes: API version is pinned per request via a dated header value.
+pagination:
+  style: cursor
+  request_params:
+    limit: {type: integer, min: 1, max: 100, default: 25}
+    lastEvaluated: {type: string, description: URL-encoded JSON cursor for the next page}
+    orderBy: {type: string, example: 'date desc', description: '(date|rating) (asc|desc)'}
+  response_fields:
+    collection: reviews
+    next: nextUrl
+  notes: >-
+    List endpoints return a collection array plus a relative nextUrl link to the
+    subsequent page when more results exist; lastEvaluated carries the cursor.
+idempotency:
+  supported: false
+  notes: No Idempotency-Key header or idempotency contract is documented.
+rate_limiting:
+  documented: false
+error_envelope:
+  documented: standard HTTP status codes; a structured problem envelope is not
+    published in the developer docs.
+webhooks:
+  supported: true
+  verification: webhookSecret returned on subscription creation, used to verify events
+  see: asyncapi/okendo-webhooks.yml

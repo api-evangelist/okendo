@@ -1,0 +1,12 @@
+generated: '2026-07-20'
+method: generated
+source: https://docs.okendo.io/merchant-rest-api/endpoints
+skills:
+- file: okendo-moderate-and-reply-to-reviews.md
+  name: Moderate and reply to Okendo reviews
+  api: Okendo Merchant REST API
+  operations: [listReviews, getReview, updateReview, replyToReview]
+- file: okendo-manage-loyalty-points.md
+  name: Manage Okendo loyalty points
+  api: Okendo Merchant REST API
+  operations: [lookupCustomer, getLoyaltyCustomer, listEarningRules, listRedemptionRules, createEarningTransaction, createRedemptionTransaction, createAdjustmentTransaction, setMinimumVipTier]

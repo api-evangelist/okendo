@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/search?q=%40okendo
+notes: >-
+  Okendo publishes first-party client-side component libraries on npm under the
+  @okendo scope (Vue and Shopify Hydrogen/React widget components). These are
+  UI/widget component packages rather than server-side API SDKs; Okendo does not
+  publish a first-party server SDK for the Merchant/Storefront REST APIs.
+packages:
+- language: javascript
+  registry: npm
+  name: '@okendo/reviews-widget-plus-vue'
+  url: https://www.npmjs.com/package/@okendo/reviews-widget-plus-vue
+  install: npm install @okendo/reviews-widget-plus-vue
+  official: true
+  description: Install and use the Okendo Reviews Widget Plus Vue components.
+- language: javascript
+  registry: npm
+  name: '@okendo/okendo-widgets-vue'
+  url: https://www.npmjs.com/package/@okendo/okendo-widgets-vue
+  install: npm install @okendo/okendo-widgets-vue
+  official: true
+  description: Okendo components for Vue apps.
+- language: javascript
+  registry: npm
+  name: '@okendo/shopify-hydrogen'
+  url: https://www.npmjs.com/package/@okendo/shopify-hydrogen
+  install: npm install @okendo/shopify-hydrogen
+  official: true
+  description: Okendo React components for Shopify Hydrogen.
