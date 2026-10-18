@@ -39,5 +39,5 @@
     - connectors/applications/okendo
     vendor_link: https://okendo.io/
     builder: Fivetran
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
