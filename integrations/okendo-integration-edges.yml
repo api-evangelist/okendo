@@ -6,6 +6,7 @@ source:
 - https://composio.dev/toolkits/okendo
 - https://monid.ai/tools/okendo
 checked:
+- gorgias/integrations/gorgias-integration-edges.yml
 - https://composio.dev/toolkits/okendo
 - https://fivetran.com/docs-sitemap.xml
 - https://fivetran.com/docs/connectors/partner-built-program
@@ -16,24 +17,6 @@ checked:
 summary: null
 marketplace_apps: []
 edges:
-- partner_name: Shopify (own)
-  partner: shopify
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://apps.shopify.com/okendo-reviews
-  mirror_of: shopify/integrations/shopify-integration-edges.yml
-  apps:
-  - 'Okendo: Reviews & Loyalty'
-  listing_count: 1
-  detected: '2026-10-15'
-  detected_by: mirror-platform-listings.py
-  publisher_verified:
-  - Built for Shopify
 - partner_name: Fivetran
   partner: fivetran
   partner_match: aggregator
@@ -60,4 +43,38 @@ edges:
     builder: Fivetran
   detected_by: sweep-data-integration.py
   first_seen: '2026-10-18'
+- partner_name: Gorgias (own)
+  partner: gorgias
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.gorgias.com/apps/okendo
+  mirror_of: gorgias/integrations/gorgias-integration-edges.yml
+  apps:
+  - Okendo
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+- partner_name: Shopify (own)
+  partner: shopify
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.shopify.com/okendo-reviews
+  mirror_of: shopify/integrations/shopify-integration-edges.yml
+  apps:
+  - 'Okendo: Reviews & Loyalty'
+  listing_count: 1
+  detected: '2026-10-15'
+  detected_by: mirror-platform-listings.py
+  publisher_verified:
+  - Built for Shopify
 templates: []
