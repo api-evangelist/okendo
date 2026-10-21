@@ -14,8 +14,17 @@ checked:
 - https://n8n.io/integrations/okendo/
 - https://zapier.com/apps/okendo/integrations
 - shopify/integrations/shopify-integration-edges.yml
+- https://get-connected.okendo.io/integrations/
 summary: null
-marketplace_apps: []
+marketplace_apps:
+- marketplace: own
+  channel: partner-built
+  app: okendo
+  url: https://get-connected.okendo.io/integrations/
+  app_count: 29
+  adapter: sweep-reviews-ugc.py:partnerpage-rendered-index+listing-pages
+  listed: 11
+  note: 29 listings read; only domain- / identity-linked partners are written
 edges:
 - partner_name: Fivetran
   partner: fivetran
@@ -77,4 +86,309 @@ edges:
   detected_by: mirror-platform-listings.py
   publisher_verified:
   - Built for Shopify
+- partner_name: 8fig
+  app: 8fig
+  partner: 8fig
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://get-connected.okendo.io/integrations/8fig
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-listing-builder-unknown
+    registered_name: 8fig
+    matched_domain: 8fig.co
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - 8fig
+    signal_note: 'builder not shown on the listing: direction unknown, kept out of position shares; one edge per
+      (partner, platform)'
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: Afterpay
+  app: Afterpay
+  partner: afterpay
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://get-connected.okendo.io/integrations/afterpay
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-listing-builder-unknown
+    registered_name: Afterpay
+    matched_domain: afterpay.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Afterpay
+    signal_note: 'builder not shown on the listing: direction unknown, kept out of position shares; one edge per
+      (partner, platform)'
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: AfterShip
+  app: AfterShip
+  partner: aftership
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://get-connected.okendo.io/integrations/aftership
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-listing-builder-unknown
+    registered_name: AfterShip
+    matched_domain: aftership.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - AfterShip
+    signal_note: 'builder not shown on the listing: direction unknown, kept out of position shares; one edge per
+      (partner, platform)'
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: Alloy Automation
+  app: Alloy Automation
+  partner: alloy-automation
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://get-connected.okendo.io/integrations/alloy-automation
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-listing-builder-unknown
+    registered_name: Alloy Automation
+    matched_domain: runalloy.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Alloy Automation
+    signal_note: 'builder not shown on the listing: direction unknown, kept out of position shares; one edge per
+      (partner, platform)'
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: Appbrew
+  app: Appbrew
+  partner: appbrew
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://get-connected.okendo.io/integrations/appbrew
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-app
+    registered_name: Appbrew
+    matched_domain: appbrew.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Appbrew
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: Arka
+  app: Arka
+  partner: arka
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://get-connected.okendo.io/integrations/arka-3
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-listing-builder-unknown
+    registered_name: Arka
+    matched_domain: arka.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Arka
+    signal_note: 'builder not shown on the listing: direction unknown, kept out of position shares; one edge per
+      (partner, platform)'
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: Bazaarvoice
+  app: Bazaarvoice
+  partner: bazaarvoice
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://get-connected.okendo.io/integrations/bazaarvoice
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-listing-builder-unknown
+    registered_name: Bazaarvoice
+    matched_domain: bazaarvoice.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Bazaarvoice
+    signal_note: 'builder not shown on the listing: direction unknown, kept out of position shares; one edge per
+      (partner, platform)'
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: LoyaltyLion
+  app: LoyaltyLion
+  partner: loyaltylion
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://get-connected.okendo.io/integrations/loyaltylion
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-listing-builder-unknown
+    registered_name: LoyaltyLion
+    matched_domain: loyaltylion.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - LoyaltyLion
+    signal_note: 'builder not shown on the listing: direction unknown, kept out of position shares; one edge per
+      (partner, platform)'
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: Shopify
+  app: Shopify
+  partner: shopify
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://get-connected.okendo.io/integrations/shopify
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-listing-builder-unknown
+    registered_name: Shopify
+    matched_domain: shopify.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Shopify
+    signal_note: 'builder not shown on the listing: direction unknown, kept out of position shares; one edge per
+      (partner, platform)'
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: Attentive Mobile
+  app: Attentive Mobile
+  partner: attentive
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://get-connected.okendo.io/integrations/attentive-mobile
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-provider-built-app
+    registered_name: null
+    matched_domain: attentive.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Attentive Mobile
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
+- partner_name: Klaviyo
+  app: Klaviyo
+  partner: klaviyo
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://get-connected.okendo.io/integrations/klaviyo
+  category: null
+  contract_reference:
+    register: 'Okendo Tech Partner Directory (get-connected.okendo.io/integrations, PartnerPage: website + Developed
+      by)'
+    spec_file: null
+    role: okendo-provider-built-app
+    registered_name: null
+    matched_domain: klaviyo.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Klaviyo
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-reviews-ugc.py
+    detected: '2026-10-20'
+  detected_by: sweep-reviews-ugc.py
+  detected: '2026-10-20'
 templates: []
