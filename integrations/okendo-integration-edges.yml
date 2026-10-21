@@ -15,6 +15,12 @@ checked:
 - https://zapier.com/apps/okendo/integrations
 - shopify/integrations/shopify-integration-edges.yml
 - https://get-connected.okendo.io/integrations/
+- https://a16z.com/portfolio/
+- https://www.battery.com/company/
+- https://www.battery.com/wp-admin/admin-ajax.php
+- https://www.indexventures.com/companies/
+- https://www.sequoiacap.com/our-companies/
+- https://www.sequoiacap.com/sitemap.xml
 summary: null
 marketplace_apps:
 - marketplace: own
@@ -391,4 +397,31 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-reviews-ugc.py
   detected: '2026-10-20'
+- partner_name: Index Ventures
+  partner: index-ventures
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.indexventures.com/companies/okendo/
+  category: vc portfolio participation
+  contract_reference:
+    register: Index Ventures companies (indexventures.com/companies/)
+    standard: null
+    spec_file: null
+    role: vc-portfolio-company
+    registered_name: Okendo
+    register_id: https://www.indexventures.com/companies/okendo/
+    register_country: australasia
+    register_website: https://www.okendo.io/
+    matched_domain: okendo.io
+    matched_by: domain
+    signal_note: 'participation only: the venture firm''s own published portfolio lists the company (investment);
+      an ownership and participation record, not conformance or certification'
+    detected_by: sweep-vc-portfolios.py
+    detected: '2026-10-21'
+    sector: business-applications
+  detected_by: sweep-vc-portfolios.py
+  first_seen: '2026-10-21'
 templates: []
