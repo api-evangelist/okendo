@@ -64,6 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Okendo is a company surfaced as a portfolio company of index-ventures and added to the API Evangelist network as a stub for enrichment. Sector: business-applications. This profile is a lead awaiting the enrichment pipeline.
+Okendo is a customer-marketing platform for ecommerce brands, centered on the Shopify ecosystem, that unifies product reviews and ratings, loyalty programs, referrals, quizzes and surveys to drive conversion and repeat purchases. For developers Okendo exposes two REST surfaces: a server-side Merchant (Enterprise) REST API (https://api.okendo.io/enterprise, HTTP Basic auth plus a dated okendo-api-version header) for reviews moderation, loyalty, customers, surveys, quizzes, settings and webhook management; and a public Storefront REST API for reading published reviews, aggregates, media and Q&A. It also ships embeddable on-site widgets, a Storefront Javascript API, and first-party Vue and Shopify Hydrogen component packages, plus a webhook event stream across reviews, loyalty, surveys, quizzes and referrals.
 
-Backed by: index-ventures — https://www.okendo.io/
+**Areas:** Company · Business Applications · Reviews · Ratings · E-Commerce · Loyalty · Customer Marketing · Shopify · Webhook · Loyalty & Incentives
+
+## Okendo on APIs.io
+
+Everything profiled for Okendo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/okendo/](https://apis.io/providers/okendo/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Okendo Merchant REST API](https://apis.io/apis/okendo/okendo-merchant-rest-api/) — Server-side Enterprise REST API for managing reviews (list/get/update/reply), review groups, customers and profiles, loyalty (rules, transactions, VIP…
+- [Okendo Storefront REST API](https://apis.io/apis/okendo/okendo-storefront-rest-api/) — Public, unauthenticated read API (scoped by okendo_user_id in the path) for displaying published reviews, review aggregates, review media, AI review…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Okendo Webhooks](https://apis.io/asyncapis/okendo/okendo-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [okendo](https://apis.io/servers/okendo/okendo/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Okendo Authentication](https://apis.io/security/okendo/okendo-authentication/)
+- [Okendo Domain Security](https://apis.io/security/okendo/okendo-domain-security/)
+- [Okendo Trust Center](https://apis.io/security/okendo/okendo-trust-center/)
+- [Okendo Vulnerability Disclosure](https://apis.io/security/okendo/okendo-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.okendo.io/)
+- [Documentation](https://docs.okendo.io/)
+- [Getting started](https://docs.okendo.io/merchant-rest-api/quick-start)
+- [API reference](https://docs.okendo.io/merchant-rest-api/endpoints)
+- [Pricing](https://okendo.io/pricing/)
+- [Support](https://support.okendo.io)
+- [Blog](https://okendo.io/resources/blog/)
+- [Security](https://okendo.io/security/)
+- [Compliance](https://trust.okendo.io/)
+- [Terms of service](https://okendo.io/legal-merchants/)
+- [Privacy policy](https://okendo.io/legal-end-users/)
+- [Status](https://status.okendo.io/)
+
+## API Evangelist rating
+
+**Kin Score 37.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 28.0 |
+| Access clarity | 39.5 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/okendo/](https://apis.io/providers/okendo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Okendo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/okendo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
